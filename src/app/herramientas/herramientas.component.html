@@ -1,0 +1,15 @@
+<div class="container mt-4">
+    <h1 class="mb-4 text-primary">Herramientas para el Pensamiento Computacional</h1>
+    
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col" *ngFor="let herramienta of herramientas">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title text-primary">{{ herramienta.nombre }}</h5>
+            <p class="card-text">{{ herramienta.descripcion }}</p>
+            <a [href]="herramienta.url" target="_blank" class="btn btn-outline-primary">Visitar sitio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
